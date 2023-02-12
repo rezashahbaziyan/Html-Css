@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.section{
+    height: 350px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 200px;
+}
+.box{
+    height: 300px;
+    width: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(0px);
+}
+.box__face{
+    position: absolute;
+}
+.box__face--back{
+    background-size: cover;
+    background-position: center;
+    height: 120px;
+    width: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+.mahsol{
+    height: 70%;
+    width: 70%;
+    background-image: url(680-6807616_vans-shoes-png-vans-shoes-transparent-background-png-removebg.png);
+    background-size: cover;
+    background-position: center;
+}
+.box__face--right{
+    height: 120px;
+    width: 70px;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+}
+.box__face--left{
+    height: 120px;
+    width: 70px;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+.box__face--top{
+    height: 70px;
+    width: 200px;
+    left: 50%;
+    top: 20.2px;
+    transform: translateX(-50%);
+}
+.box__face--bottom{
+    height: 70px;
+    width: 200px;
+    left: 50%;
+    bottom: 20.2px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    font-size: 18px;
+    transform: rotateX(180deg);
+    color: transparent;
+    font-family: 'Satisfy', cursive;
+} 
+
+
+
+
+
+/* .section:hover .box__face--right{
+    transition: all 0.5s;
+    transform: rotateY( 90deg);
+    top: 90px; 
+    transform-origin: 100% 0%;
+    background-image: url(pexels-pixabay-326333.jpg);
+    background-size: cover;
+}
+.section:hover .box__face--left{
+    transition: all 0.5s;
+    transform: rotateY( -90deg);
+    top: 90px; 
+    transform-origin: 0% 100%;
+    background-image: url(pexels-pixabay-326333.jpg);
+    background-size: cover;
+}
+.section:hover .box__face--top{
+    transition: all 0.5s;
+    transform: rotateX( -90deg);
+    top: 20px; 
+    left: 75px;
+    transform-origin: 0% 100%;
+    background-image: url(pexels-pixabay-326333.jpg);
+    background-size: cover;
+}
+.section:hover .box__face--bottom{
+    transition: all 0.5s;
+    transform: rotateX( 90deg);
+    bottom: 20px; 
+    left: 75px;
+    transform-origin: 100% 0%;
+    background-image: url(pexels-pixabay-326333.jpg);
+    background-size: cover;
+}
+.section:hover .box__face--back{
+    background-image: url(pexels-pixabay-326333.jpg);
+}
+.section:hover .box{
+    animation: rot 1s linear 1s  both;
+}
+.section:hover .logo{
+    animation: logotext 1s linear 2.5s  both;
+}
+ */
+
+@keyframes rot {
+    0%{
+        transform: rotateX(0deg);
+    }
+    100%{
+        transform: rotateX(90deg) ;
+    }
+}
+@keyframes logotext {
+    0%{
+        color: transparent;
+    }
+    100%{
+        color: rgba(255, 255, 255, 0.925);
+    }
+}

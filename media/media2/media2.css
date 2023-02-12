@@ -1,0 +1,145 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.media .fa{
+    background-color: blue;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    font-size: 30px;
+    position: absolute;
+    top: 140px;
+    left: 50px;
+    cursor: pointer;
+}
+#telegram{
+    animation: Telo 0.5s forwards;
+}
+.fa:hover ~ #telegram{
+    animation: Tel 0.5s forwards;
+}
+
+#instagram{
+    animation: Inso 0.5s forwards;
+}
+.fa:hover ~ #instagram{
+    animation: Ins 0.5s forwards;
+    animation-delay: 0.3s;
+}
+
+#twitter{
+    animation: Twio 0.5s forwards;
+}
+.fa:hover ~ #twitter{
+    animation: Twi 0.5s forwards;
+    animation-delay: 0.6s;
+}
+
+#youtube{
+    animation: youTo 0.5s forwards;
+}
+.fa:hover ~ #youtube{
+    animation: youT 0.5s forwards;
+    animation-delay: 0.9s;
+}
+
+
+#share{
+    width: 55px;
+    height: 55px;
+    z-index: 999;
+    line-height: 55px;
+    font-size: 35px;
+}
+#telegram , #instagram , #twitter , #youtube{
+    top: 145px;
+    left: 50px;
+}
+@keyframes Tel{
+    0%{
+        top: 145px;
+        left: 50px;
+    }
+    100%{
+        top: 80px;
+        left: 100px;
+    }
+}
+@keyframes Telo{
+    100%{
+        top: 145px;
+        left: 50px;
+    }
+    0%{
+        top: 80px;
+        left: 100px;
+    }
+}
+
+@keyframes Ins{
+    0%{
+        top: 145px;
+        left: 50px;
+    }
+    100%{
+        top: 120px;
+        left: 130px;
+    }
+}
+@keyframes Inso{
+    100%{
+        top: 145px;
+        left: 50px;
+    }
+    0%{
+        top: 120px;
+        left: 130px;
+    }
+}
+
+@keyframes Twi{
+    0%{
+        top: 145px;
+        left: 50px;
+    }
+    100%{
+        top: 170px;
+        left: 130px;
+    }
+}
+@keyframes Twio{
+    100%{
+        top: 145px;
+        left: 50px;
+    }
+    0%{
+        top: 170px;
+        left: 130px;
+    }
+}
+
+@keyframes youT{
+    0%{
+        top: 145px;
+        left: 50px;
+    }
+    100%{
+        top: 210px;
+        left: 100px;
+    }
+}
+@keyframes youTo{
+    100%{
+        top: 145px;
+        left: 50px;
+    }
+    0%{
+        top: 210px;
+        left: 100px;
+    }
+}

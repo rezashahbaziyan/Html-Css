@@ -1,0 +1,24 @@
+*{
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.btn{
+    padding: 20px 40px;
+    border: 2px solid rgb(4, 161, 201);
+    background-color: transparent;
+    color: rgb(4, 161, 201);
+    font-size: 30px;
+    text-transform: uppercase;
+    background-image: linear-gradient(40deg, rgb(4, 161, 201) 40%, transparent 50%);
+    background-position: 100%;
+    background-size: 300%;
+    transition: all 1s;
+}
+.btn:hover{
+    color: black;
+    background-position: 0%;
+}

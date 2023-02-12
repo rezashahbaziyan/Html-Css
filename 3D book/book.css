@@ -1,0 +1,35 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.book{
+    width: 300px;
+    height: 350px;
+    margin: 40px 100px;
+    position: relative;
+    perspective: 800px;
+}
+.right{
+    width: 80%;
+    height: 100%;
+    background-image: url(kant.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(40deg);
+    transform-origin: 30% 40%;
+    box-shadow: -10px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.left{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(37, 32, 32);
+    position: absolute;
+    left: -20px;
+    transform: rotateY(-50deg);
+    transform-origin: 0% 40%;
+    box-shadow: -10px 5px 10px rgba(0, 0, 0, 0.5);
+}

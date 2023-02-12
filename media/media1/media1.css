@@ -1,0 +1,60 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.media{
+    width: 45%;
+    height: 60px;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-around;
+}
+.icon{
+    background-color: #fff;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    font-size: 30px;
+    box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.377);
+    color: rgb(0, 205, 30);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.fa-brands{
+    position: absolute;
+    line-height: 60px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+.icon:hover::before{
+    content: '';
+    position: absolute;
+    background-color: rgb(0, 205, 30);
+    height: 100%;
+    width: 100%;
+    top: -50px;
+    left: 50px;
+    border-radius: 50%;
+    animation: GTB 1s forwards;
+}
+.icon:hover{
+    color: #fff;
+    transition: all 0.5s;
+}
+@keyframes GTB{
+    0%{
+        top:-50px;
+        left: 50px;
+    }
+    70%{
+        top: 10px;
+        left: -10px;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+}

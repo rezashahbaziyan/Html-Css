@@ -1,0 +1,63 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(pic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.main-nav{
+    background-color: tomato;
+    width: 680px;
+    height: 60px;
+    margin: 3rem auto;
+}
+.main-nav li{
+    color: #fff;
+    list-style: none;
+    background-color: black;
+    width: 170px;
+    height: 100%;
+    float: left;
+    line-height: 60px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+}
+.servic-nav{
+    position: absolute;
+    left: -1px;
+    display: none;
+    top: 59px;
+}
+.UI-nav{
+    position: absolute;
+    left: 169px;
+    top: -2px;
+    display: none;
+}
+.UX-nav{
+    position: absolute;
+    left: 169px;
+    top: -1px;
+    display: none;
+}
+.main-nav li:hover>ul {
+    display: block;
+}
+.main-nav li:hover{
+    background-color: rgb(5, 114, 54);
+}
+.Copy-nav{
+    position: absolute;
+    left: 169px;
+    top: -1px;
+    display: none;
+}
+
+
